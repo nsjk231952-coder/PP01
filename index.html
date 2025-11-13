@@ -98,10 +98,11 @@ document.getElementById('loginForm').addEventListener('submit', e => {
   const usuario = document.getElementById('usuario').value.trim().toLowerCase();
   const msg = document.getElementById('message');
 
-  const rutas = {
-    kevin: '/frontend/dashboard.php',
-    nicol: '/frontend/agregarusuario.php'
-  };
+const rutas = {
+  kevin: '/frontend/dashboard.php',
+  nicol: '/frontend/agregarusuario.php'
+};
+
 
   if (rutas[usuario]) {
     window.location.href = rutas[usuario];
@@ -113,4 +114,5 @@ document.getElementById('loginForm').addEventListener('submit', e => {
 
 </body>
 </html>
+
 
